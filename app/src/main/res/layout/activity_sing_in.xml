@@ -38,16 +38,18 @@
             android:orientation="vertical"
             android:gravity="center|top"
             android:layout_weight="0.7">
+
             <EditText
+                android:id="@+id/firstNameInput"
                 android:layout_width="289dp"
                 android:layout_height="30dp"
                 android:background="@drawable/edit_back"
                 android:hint="First name"
                 android:textColor="@color/black"
-                android:gravity="center"
-                ></EditText>
+                android:gravity="center" />
 
             <EditText
+                android:id="@+id/lastNameInput"
                 android:layout_width="289dp"
                 android:layout_height="30dp"
                 android:layout_marginTop="30dp"
@@ -55,19 +57,22 @@
                 android:hint="Last name"
                 android:textColor="@color/black"
                 android:gravity="center"
-                ></EditText>
+                android:autofillHints=""
+                android:inputType="none" />
+
             <EditText
+                android:id="@+id/emailInput"
                 android:layout_width="289dp"
                 android:layout_height="30dp"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/edit_back"
                 android:hint="Email"
+                android:inputType="textWebEmailAddress"
                 android:textColor="@color/black"
-                android:gravity="center"
-                ></EditText>
+                android:gravity="center" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button"
+                android:id="@+id/singInBut"
                 android:layout_width="289dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="30dp"
@@ -87,6 +92,7 @@
                     android:layout_weight="1"
                     android:text="Already an account?"/>
                 <TextView
+                    android:id="@+id/logIn"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Log in"
